@@ -1,0 +1,492 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,400;1,500&display=swap');
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* variabelen voor kleuren  */
+:root{
+--logokleur1: #897B72;
+--logokleur2: #99AA94;
+}
+
+
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+/* navigatie bar  */
+
+header{
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.navbar_text{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.logo_navbar{
+    margin: 10px;
+}
+
+/* einde navigatie bar */
+
+/* main */
+
+main{
+    min-height: calc( 100vh - 100px );
+
+}
+ 
+.navbar-collapse{
+text-align: center;
+}
+
+.homepagina_foto{
+    background-size: 100%; 
+    padding-left: 50px;
+    padding-right: 50px;
+    height: auto;
+    padding-bottom: 50px;
+}
+@media only screen and (max-width: 550px) {
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+.homepagina_foto{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
+h1{
+    font-weight: bold;
+    color: var(--logokleur2);
+}
+
+.kop{
+    color: var(--logokleur2);
+    font-weight: bold ;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro_text_home{
+    text-align: center;
+    color: black;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.intro_kop{
+font-size: 20px;
+}
+
+.pagina_h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+.text_kleur{
+    color: black;
+}
+
+.tarieven_container{
+    background-color: var(--logokleur2);
+    position: relative;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+    left: 50%; 
+    transform: translate(-50%); 
+    font-size: 20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 660px) {
+        .tarieven_container{
+            width: 296px;
+        }
+}
+
+.stallen_container{
+    margin-top: 150px;
+    background-color:var(--logokleur2);
+    font-size: 18px;
+    text-align: center;
+    width: 500px;
+    height: 538px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1690px) {
+    .stallen_container{
+        width: 470px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    }
+
+
+    @media only screen and (max-width: 420px) {
+        .stallen_container{
+            width: auto;
+            height: auto;
+        }
+    }
+    
+
+.navbar-toggler{
+    margin-right: 15px;
+}
+
+
+.tarief{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tarieven_text_zakelijk{
+    padding: 20px;
+}
+
+.intro_text{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.vergaderh2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.stallen_h2{
+    margin-bottom: 25px;
+}
+
+.mail{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.voorwaardenh2{
+    text-align: center;
+}
+
+.voorwaarden{
+    text-align: center;
+}
+
+.card_body{
+    border: 1px solid black;
+}
+
+
+.zakelijke_container{
+    width: 500px;
+    height: 275px;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    background-color: var(--logokleur2);
+
+}
+
+@media only screen and (max-width: 650px) {
+    .zakelijke_container{
+        width: auto;
+        height: auto;
+    }
+}
+
+.onderkant{
+    margin-bottom: 40px;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.zakelijk_h2{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.articles_zakelijk{
+    margin: 15px;
+    font-size: 15px;
+}
+
+.tour{
+    text-align: center;
+}
+
+
+/* einde main */
+
+/* footer */
+
+.footer_container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: var(--logokleur2);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h3{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+ .footer-col h3::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: white;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+} 
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: var(--logokleur2);
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.error_foto{
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.error_text{
+    color: #99AA94;
+    text-align: center;
+}
+
+.faciliteiten_card{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding: 0 !important;
+}
+/* einde footer */
+
+
+.subknop{
+    margin-top: 16px;
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.contactstuk{
+    margin-top: 50px;
+    display: block;
+    position: relative;
+    width: 750px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+/* footer */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;  
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
